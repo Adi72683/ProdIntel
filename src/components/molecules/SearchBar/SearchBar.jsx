@@ -17,7 +17,7 @@ function SearchBar({ onSearch }) {
       />
 
       <button
-        className="bg-purple-600 px-6 py-4 rounded-xl"
+        className="w-64 py-4 rounded-xl bg-violet-600 text-white text-2xl font-semibold hover:bg-violet-500 transition"
         onClick={() => onSearch(query)}
       >
         Search

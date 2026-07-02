@@ -1,10 +1,8 @@
 function Button({ text, onClick }) {
   return (
-    <button
-      onClick={onClick} className="bg-gradient-to-r from-purple-600 to-blue-500 px-8 py-3 rounded-xl text-3xl font-semibold text-white hover:scale-105 transition"
-    >
-      {text}
-    </button>
+  <button onClick={onClick} className=" bg-purple-600 p-4 rounded-xl text-3xl font-semibold text-white transition duration-300">
+  {text}
+</button>
   );
 }
 

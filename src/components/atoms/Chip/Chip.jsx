@@ -1,11 +1,8 @@
 function Chip({ label, selected, onClick}) {
 
   return (
-
     <button
-
       onClick={onClick}
-
       className={`px-6 py-3 rounded-full text-xl font-semibold transition duration-300
        ${
           selected
@@ -14,13 +11,8 @@ function Chip({ label, selected, onClick}) {
         }
       `}
     >
-
       {label}
-
     </button>
-
   );
-
 }
-
 export default Chip;

@@ -1,7 +1,7 @@
 import OrbitCircle from "../../atoms/OrbitCircle/OrbitCircle";
 import ProductSatellite from "../../atoms/ProductSatellite/ProductSatellite";
 
-function Orbit({ radius, product, index }) {
+function Orbit({ radius, product, index, feature, category, products}) {
 
   const angles = [-160, -20, 35, 145, 180];
 
@@ -19,14 +19,14 @@ function Orbit({ radius, product, index }) {
 
       {/* Product Satellite */}
       <div
-        className="absolute"
+        className="absolute z-20"
         style={{
           left: `calc(50% + ${x}px)`,
           top: `calc(50% + ${y}px)`,
           transform: "translate(-50%, -50%)",
         }}
       >
-        <ProductSatellite product={product} index={index} />
+        <ProductSatellite product={product} index={index} feature={feature} category={category} products={products}/>
       </div>
     </>
   );
